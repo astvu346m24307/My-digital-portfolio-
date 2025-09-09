@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Untitled</title>
+  
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<!doctype html>
+
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8" />
+
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+
+  <title>Rahmathunnisa A — Smart Student Portfolio</title>
+
+  <meta name="description" content="Rahmathunnisa A — BCA Student portfolio. Projects, skills, contact." />
+
+  <style>
+
+    :root{
+
+      --accent: #7dd3fc;
+
+      --muted: #94a3b8;
+
+      --bg: #000000;
+
+      --card: #0b1220;
+
+      --glass: rgba(255,255,255,0.04);
+
+      --radius: 14px;
+
+      --max-width:1100px;
+
+      color-scheme: dark;
+
+    }
+
+    *{box-sizing:border-box}
+
+    html,body{height:100%;margin:0;font-family:Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;color:#e6eef6;background:linear-gradient(180deg,#000 0%,#040406 60%);}
+
+    .wrap{max-width:var(--max-width);margin:36px auto;padding:28px}
+
+    header{display:flex;gap:20px;align-items:center;justify-content:space-between}
+
+    .brand{display:flex;gap:16px;align-items:center}
+
+    .avatar{width:84px;height:84px;border-radius:16px;background:linear-gradient(135deg,#0ea5e9,#6366f1);display:flex;align-items:center;justify-content:center;font-weight:700;color:white;font-size:28px;box-shadow:0 6px 20px rgba(0,0,0,0.6)}
+
+    h1{margin:0;font-size:22px}
+
+    p.lead{margin:2px 0 0;color:var(--muted);font-size:14px}nav a{color:var(--muted);text-decoration:none;margin-left:14px;font-size:14px}
+
+.hero{display:grid;grid-template-columns:1fr 360px;gap:28px;margin-top:26px;align-items:start}
+
+.card{background:var(--card);padding:20px;border-radius:var(--radius);backdrop-filter:blur(6px);box-shadow:0 8px 30px rgba(2,6,23,0.6)}
+
+.intro h2{margin:0 0 8px;font-size:20px}
+
+.intro p{color:var(--muted);line-height:1.5}
+
+.cta{margin-top:12px;display:flex;gap:10px}
+
+.btn{background:transparent;border:1px solid rgba(255,255,255,0.08);padding:10px 14px;border-radius:12px;color:var(--accent);cursor:pointer}
+
+.btn.primary{background:linear-gradient(90deg,#0ea5e9,#7c3aed);border:none;color:#fff}
+
+.info{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:14px}
+
+.small{font-size:13px;color:var(--muted)}
+
+/* Projects column */
+
+.projects{display:flex;flex-direction:column;gap:12px}
+
+.proj{display:flex;flex-direction:column;padding:14px;border-radius:12px;background:linear-gradient(180deg,rgba(255,255,255,0.02),transparent);cursor:pointer}
+
+.proj h3{margin:0;font-size:16px}
+
+.proj p{margin:6px 0 0;color:var(--muted);font-size:13px}
+
+/* sections */
+
+section{margin-top:22px}
+
+.grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+
+.skill{padding:12px;border-radius:12px;background:var(--glass);text-align:center}
+
+.education{display:flex;flex-direction:column;gap:10px}
+
+footer{margin-top:36px;text-align:center;color:var(--muted);font-size:13px}
+
+/* responsive */
+
+@media (max-width:900px){
+
+  .hero{grid-template-columns:1fr;}
+
+  .brand{gap:10px}
+
+  .avatar{width:72px;height:72px}
+
+  .grid-3{grid-template-columns:repeat(2,1fr)}
+
+}
+
+@media (max-width:520px){
+
+  .grid-3{grid-template-columns:1fr}
+
+  nav{display:none}
+
+}
+
+/* contact form */
+
+form{display:grid;gap:10px}
+
+input,textarea{background:transparent;border:1px solid rgba(255,255,255,0.06);padding:10px;border-radius:10px;color:#e6eef6}
+
+/* subtle utilities */
+
+.tag{display:inline-block;padding:6px 10px;border-radius:999px;background:rgba(255,255,255,0.03);font-size:12px;color:var(--muted)}
+
+  </style>
+
+</head>
+
+<body>
+
+  <div class="wrap">
+
+    <header>
+
+      <div class="brand">
+
+        <div class="avatar">RA</div>
+
+        <div>
+
+          <h1>Rahmathunnisa A</h1>
+
+          <p class="lead">BCA Student — MMES Women's Arts and Science College</p>
+
+        </div>
+
+      </div>
+
+      <nav>
+
+        <a href="#about">About</a>
+
+        <a href="#projects">Projects</a>
+
+        <a href="#skills">Skills</a>
+
+        <a href="#contact">Contact</a>
+
+      </nav>
+
+    </header><main>
+
+  <div class="hero">
+
+    <div class="card intro">
+
+      <h2>Hello — I'm Rahmathunnisa</h2>
+
+      <p>I'm a BCA student passionate about web development, clean UI, and building smart digital portfolios for students. I enjoy turning ideas into small, delightful apps.</p>
+
+      <div class="cta">
+
+        <button class="btn primary" id="downloadResume">Download Resume</button>
+
+        <button class="btn" id="contactBtn">Contact Me</button>
+
+      </div>
+
+      <div class="info" style="margin-top:16px">
+
+        <div>
+
+          <div class="small">Department</div>
+
+          <div>MMES Women's Arts & Science College</div>
+
+        </div>
+
+        <div>
+
+          <div class="small">Location</div>
+
+          <div>Melvisharam, India</div>
+
+        </div>
+
+      </div>
+
+      <div style="margin-top:14px">
+
+        <span class="tag">Hobbies: Painting</span>
+
+        <span class="tag">Drawing</span>
+
+        <span class="tag">Reading</span>
+
+        <span class="tag">Writing</span>
+
+      </div>
+
+    </div>
+
+    <aside class="card">
+
+      <h3 style="margin-top:0">Featured Projects</h3>
+
+      <div class="projects" id="projects">
+
+        <div class="proj" data-title="Smart Digital Portfolio" data-desc="A single-file responsive portfolio with editable content.">
+
+          <h3>Smart Digital Portfolio</h3>
+
+          <p>Single-file HTML/CSS/JS portfolio template.</p>
+
+        </div>
+
+        <div class="proj" data-title="Fake News Detection" data-desc="A basic classifier prototype for learning purposes.">
+
+          <h3>Fake News Detection</h3>
+
+          <p>Project idea: detect fake news using simple ML pipeline.</p>
+
+        </div>
+
+        <div class="proj" data-title="College Portal Mini" data-desc="UI mock for college notices and resources.">
+
+          <h3>College Portal Mini</h3>
+
+          <p>UI-driven mini portal for students.</p>
+
+        </div>
+
+      </div>
+
+    </aside>
+
+  </div>
+
+  <section id="about" class="card">
+
+    <h2>About Me</h2>
+
+    <p class="small">Hi! I'm a motivated BCA student focusing on front-end development, UI/UX basics and small full-stack experiments. I love painting, sketching, reading novels, and writing small essays.</p>
+
+    <div style="margin-top:12px" class="education">
+
+      <div class="small">Education</div>
+
+      <div>
+
+        <strong>MMES Women's Arts & Science College — BCA</strong>
+
+        <div class="small">Currently pursuing</div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <section id="skills" class="card">
+
+    <h2>Skills</h2>
+
+    <div class="grid-3" style="margin-top:12px">
+
+      <div class="skill">HTML & CSS</div>
+
+      <div class="skill">JavaScript</div>
+
+      <div class="skill">Responsive Design</div>
+
+      <div class="skill">Git & GitHub</div>
+
+      <div class="skill">Basic Python</div>
+
+      <div class="skill">Project Planning</div>
+
+    </div>
+
+  </section>
+
+  <section id="contact" class="card">
+
+    <h2>Contact</h2>
+
+    <p class="small">Want to collaborate or need help building a portfolio? Send a message.</p>
+
+    <form id="contactForm" onsubmit="event.preventDefault();sendMsg();">
+
+      <input id="name" placeholder="Your name" required />
+
+      <input id="email" placeholder="Email" type="email" required />
+
+      <textarea id="message" placeholder="Message" rows="4" required></textarea>
+
+      <div style="display:flex;gap:10px">
+
+        <button class="btn primary" type="submit">Send</button>
+
+        <button class="btn" type="button" id="clearBtn">Clear</button>
+
+      </div>
+
+    </form>
+
+  </section>
+
+</main>
+
+<footer>
+
+  <div>© <span id="year"></span> Rahmathunnisa A — BCA, MMES Women's Arts & Science College</div>
+
+</footer>
+
+  </div>  <script>
+
+    // populate year
+
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    // project click -> simple modal (native)
+
+    document.querySelectorAll('.proj').forEach(p=>p.addEventListener('click',()=>{
+
+      const title = p.dataset.title || p.querySelector('h3').textContent;
+
+      const desc = p.dataset.desc || p.querySelector('p').textContent;
+
+      alert(title + "\n\n" + desc);
+
+    }));
+
+    // contact actions
+
+    function sendMsg(){
+
+      const n=document.getElementById('name').value.trim();
+
+      const e=document.getElementById('email').value.trim();
+
+      const m=document.getElementById('message').value.trim();
+
+      if(!n||!e||!m){alert('Please fill all fields');return}
+
+      // for this demo we just show a message. In a real site you'd send to server or email service
+
+      alert('Thanks ' + n + '! Your message has been noted.');
+
+      document.getElementById('contactForm').reset();
+
+    }
+
+    document.getElementById('clearBtn').addEventListener('click',()=>document.getElementById('contactForm').reset());
+
+    // download a simple resume (generated on the fly)
+
+    document.getElementById('downloadResume').addEventListener('click',()=>{
+
+      const resume = `Rahmathunnisa A\nBCA Student - MMES Women's Arts and Science College\n\nSkills:\n- HTML, CSS, JavaScript\n- Responsive Design\n- Git\n\nHobbies: Painting, Drawing, Reading, Writing\n\nProjects:\n- Smart Digital Portfolio\n- Fake News Detection (prototype)\n`;
+
+      const blob = new Blob([resume],{type:'text/plain'});
+
+      const url = URL.createObjectURL(blob);
+
+      const a = document.createElement('a');
+
+      a.href = url; a.download = 'Rahmathunnisa_Resume.txt'; document.body.appendChild(a); a.click(); a.remove(); URL.revokeObjectURL(url);
+
+    });
+
+    // quick contact button scroll
+
+    document.getElementById('contactBtn').addEventListener('click',()=>{
+
+      document.getElementById('contact').scrollIntoView({behavior:'smooth'});
+
+    });
+
+  </script></body>
+
+</html>
+<!-- partial -->
+  
+</body>
+</html>
